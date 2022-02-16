@@ -1,0 +1,189 @@
+
+/* Importa a fonte 'Roboto' da Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Variáveis no CSS */
+:root {
+    --cor1: #f9f9f9;
+    --cor2: #dddddd;
+    --cor3: #999999;
+    --cor4: #232323;
+    --cor5: #4030ab;
+    --cor6: #6464ff;
+    --tamanho-fonte: 18px;
+}
+
+/* Limpa as configuções padrão dos navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+    /* font-size: 18px; */
+    font-size: var(--tamanho-fonte);
+}
+
+body {
+    background-color: var(--cor2);
+    color: var(--cor4);
+}
+
+a {
+    text-decoration: none;
+    color: var(--cor4);
+}
+
+nav {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: left;
+    background-color: var(--cor1);
+    border-bottom: 1px solid var(--cor3);
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+.logotipo {
+    padding-left: 10%;
+    display: inline-block;
+}
+
+.logotipo span {
+    color: var(--cor6);
+}
+
+.menu {
+    float: right;
+    padding-right: 10%;
+}
+
+.menu a {
+    font-size: 1.2rem;
+    padding: 8px 15px;
+    transition: 0.5s;
+}
+
+.menu a:hover {
+    background-color: var(--cor6);
+    color: var(--cor1);
+}
+
+section {
+    /* width: 80%; */
+    margin: auto;
+    margin-top: 75px;
+    margin-bottom: 65px;
+}
+
+article {
+    padding: 15px;
+    margin: 10px 0;
+    overflow: hidden;
+    background-color: var(--cor1);
+}
+
+article img {
+    /* width: 16%; */
+    float: left;
+    padding: 5px;
+    border: 1px solid var(--cor2);
+    border-radius: 5px;
+    background-color: var(--cor1);
+    margin-right: 10px;
+}
+
+h1 {
+    margin-bottom: 25px;
+}
+
+h1:hover {
+    color: var(--cor6);
+    cursor: pointer;
+}
+
+p {
+    text-align: justify;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+    color: var(--cor3);
+    background-color: var(--cor4);
+    opacity: 0.7;
+}
+
+/* === Media Queries === */
+
+/* Extra Small (xs): Smartphone (portrait - retrato) */
+@media (min-width: 300px) {
+    section {
+        width: 96%;
+        margin-top: 110px;
+    }
+
+    article img {
+        width: 100%;
+    }
+    
+    /* body {
+        background-color: #78caaf;
+    } */
+}
+
+/* Small (sm): Smartphone (landscape - paisagem) */
+@media (min-width: 576px) {
+    section {
+        width: 90%;
+    }
+
+    article img {
+        width: 35%;
+    }
+    
+    /* body {
+        background-color: #ffd970;
+    } */
+}
+
+/* Medium (md): Tablet */
+@media (min-width: 768px) {
+    section {
+        width: 80%;
+        margin-top: 75px;
+    }
+    
+    /* body {
+        background-color: #ff70f3;
+    } */
+}
+
+/* Large (lg): Notebook */
+@media (min-width: 992px) {
+    article img {
+        width: 25%;
+    }
+    
+    /* body {
+        background-color: #7085ff;
+    } */
+}
+
+/* Extra Large (xl): Computador (PC) */
+@media (min-width: 1200px) {
+    article img {
+        width: 15%;
+    }
+    
+    /* body {
+        background-color: #ff4141;
+    } */
+}
