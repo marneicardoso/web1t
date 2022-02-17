@@ -1,0 +1,40 @@
+
+html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+}
+
+body {
+    background-color: #dddddd;
+    color: #232323;
+}
+
+.item {
+    border: solid 1px #232323;
+    background-color: #999999;
+    text-align: center;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.container {
+    /* Determina que os elementos "filhos" serão em grade (grid) */
+    /* display: grid; */
+    /* display: inline-grid; */
+    display: grid;
+
+    /* Determina a quantidade de colunas (column) */
+    /* grid-template-columns: auto auto auto auto; */
+    grid-template-columns: 10% 150px auto 10%;
+
+    /* Determina a quantidade de linhas (row) */
+    grid-template-rows: auto auto;
+    /* grid-template-rows: 150px 350px; */
+
+    /* Espaçamento (gap) entre cada "bloco" */
+    /* grid-gap: 8px 25px; /* Deprecated (absoleto) */
+    /* column-gap: 25px; /* Só para a coluna */
+    /* row-gap: 25px; /* Só para a linha */
+    /* gap: 15px 10px; */
+    gap: 15px; /* Forma encurtada */
+}
