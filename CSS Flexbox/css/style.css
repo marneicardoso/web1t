@@ -1,0 +1,23 @@
+
+html {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+}
+
+body {
+    color: #232323;
+    background-color: #eeeeee;
+}
+
+main {
+    width: 80%;
+    margin: 35px auto;
+    padding: 0 45px;
+    border-left: solid 1px #dddddd;
+    border-right: solid 1px #dddddd;
+    text-align: justify;
+}
+
+img {
+    width: 75%;
+}
