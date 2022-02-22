@@ -1,0 +1,120 @@
+
+/* Importa a fonte 'Open Sans' da Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700;800&display=swap');
+
+/* Zera os valores padrão do navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+}
+
+body {
+    color: #232323;
+    background: #dce0e2 url(../img/bg.png);
+    /* background: #af6be7 url("https://cdn.pixabay.com/photo/2022/02/19/22/48/forest-7023487_960_720.jpg"); */
+    /* background-size: cover; */
+}
+
+.container {
+    width: 50%;
+    margin: auto;
+    margin-top: 75px;
+    text-align: center;
+    border-radius: 8px;
+    padding: 35px;
+    box-shadow: 0 0 5px 0 #232323;
+    background: linear-gradient(90deg, #1f4774, #833964);
+}
+
+form {
+    width: 50%;
+    margin: auto;
+    color: #f9f9f9;
+}
+
+h1 {
+    margin-bottom: 15px;
+}
+
+input {
+    display: block;
+    width: 100%;
+    margin: auto;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+form ::placeholder {
+    color: #999999;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+}
+
+.form-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+button {
+    border-radius: 25px;
+    padding: 10px;
+    font-size: 1rem;
+    color: #f9f9f9;
+    width: 48%;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.btn-login {
+    background-color: #198cd8;
+    border: none;
+    margin: 10px 0;
+}
+
+.btn-limpar {
+    background-color: #f9f9f900;
+    border: solid 2px #f9f9f9;
+    margin: 10px 0;
+}
+
+.btn-login:hover, .btn-limpar:hover {
+    background-color: #f9f9f9;
+    color: #232323;
+}
+
+.arco {
+    background-color: #1f4774;
+    height: 400px;
+    width: 100%;
+    border-radius: 50%;
+    margin-top: -100px;
+    z-index: -1;
+    position: absolute;
+}
+
+footer {
+    margin-top: 100px;
+    min-height: 300px;
+    background: linear-gradient(180deg, #1f4774, #232323);
+    display: flex;
+}
+
+footer div {
+    width: 20%;
+    padding: 35px;
+    color: #999999;
+
+    border: solid 2px #dddddd;
+}
+
+/* CONTINUA... */
