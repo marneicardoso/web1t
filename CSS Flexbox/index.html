@@ -40,6 +40,71 @@
         </p>
 
         <img src="img/alinhamento-flexbox.png">
+
+        <ul>
+            <li>
+                <span>Tamanho principal:</span> É a dimensão do elemento na direção do eixo principal (largura, caso horizontal e altura caso vertical);
+            </li>
+
+            <li>
+                <span>Tamanho transversal:</span> É a dimensão do elemento na direção do eixo transversal (largura, caso horizontal e altura caso vertical);
+            </li>
+
+            <li>
+                <span>Início principal e final principal:</span> Representam o início e o fim do eixo principal;
+            </li>
+
+            <li>
+                <span>Início transversal e final transversal:</span> Representam o início e o fim do eixo transversal.
+            </li>
+        </ul>
+
+        <hr>
+        <h3>display</h3>
+
+        <pre>
+        .container {
+            display: flex;
+        }
+        </pre>
+
+        <h3>flex-direction</h3>
+
+        <pre>
+        .container {
+            display: flex;
+            flex-direction: row;
+        }
+        </pre>
+
+        <ul>
+            <li>
+                <span>row</span> (padrão): Os itens são organizados em forma de linha da esquerda para a direita
+            </li>
+
+            <li>
+                <span>row-reverse</span>: Os itens são organizados em forma exibição em linha da direita para a esquerda
+            </li>
+
+            <li>
+                <span>column</span>: Os itens são organizados em forma de colunas iniciando de cima para baixo
+            </li>
+
+            <li>
+                <span>column-reverse</span>: Os itens são organizados em forma de colunas iniciando de baixo para cima
+            </li>
+        </ul>
+
+        <div class="container">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+        </div>
     </main>
 </body>
 </html>
+
+<!-- Ctrl + ; == comentário -->
+<!-- Alt + Z == ajusta o texto no editor -->
+<!-- Ctrl + Z == desfaz a última ação -->

@@ -21,3 +21,31 @@ main {
 img {
     width: 75%;
 }
+
+.container {
+    /* Determina que os elementos "filho" serão flexíveis */
+    display: flex;
+    flex-direction: row;
+    /* flex-direction: row-reverse; */
+    /* flex-direction: column; */
+    /* flex-direction: column-reverse; */
+    justify-content: space-around;
+    /* justify-content: space-evenly; */
+    /* justify-content: space-between; */
+}
+
+span {
+    font-weight: 700;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+.item {
+    /* height: 50px; */
+    /* width: 150px; */
+    text-align: center;
+    padding: 15px 100px;
+    background-color: #999999;
+}
