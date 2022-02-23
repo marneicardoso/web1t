@@ -1,0 +1,13 @@
+
+.container {
+    background-color: #9bfada;
+}
+
+.row {
+    border: solid 1px #d33434;
+    padding: 5px;
+}
+
+.col {
+    border: solid 1px #2d65ff;
+}
