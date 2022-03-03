@@ -36,7 +36,7 @@
                     <option value="">:: Informe e cidade ::</option>
                     <option value="1">Porto Alegre</option>
                     <option value="2">Canoas</option>
-                    <option value="3" selected>São Leopoldo</option>
+                    <option value="3">São Leopoldo</option>
                     <option value="4">Novo Hamburgo</option>
                     <option value="5">Sapucaia</option>
                 </select>
@@ -58,8 +58,8 @@
                 <input type="text">
 
                 <hr>
-                <input type="button" value="Botão input">
-                <button>Botão button</button>
+                <!-- <input type="button" value="Botão input"> -->
+                <!-- <button>Botão button</button> -->
 
                 <br>
                 Tem habilitação?
@@ -74,6 +74,22 @@
                 <input type="radio" name="sexo" value="m">
 
                 <input type="date">
+
+                <!-- O Switch é do Bootstrap, não tem no HTML puro -->
+                <div class="form-check form-switch">
+                    <input type="checkbox" id="alavanca" class="form-check-input">
+                    <label for="alavanca" class="form-check-label">Botão Switch</label>
+                </div>
+
+                Upload de arquivos/imagens
+                <input type="file">
+
+                Pattern:
+                <label>Estado</label>
+                <input type="text" pattern="[A-Za-z]{2}" required title="Silga do Estado">
+                <!-- Aceita apenas 2 letras (Maiúsculas ou minúsculas) -->
+
+                <button>Enviar</button>
             </form>
         </div>
 
