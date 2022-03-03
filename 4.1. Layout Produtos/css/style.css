@@ -1,0 +1,58 @@
+
+/* Importa a fonte Montserrat da Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&display=swap');
+
+/*  Para utilizar outras Fontes (letras) no Bootstrap,
+    é preciso declarar dentro do bloco com asterisco (*).
+    Se declarar no html, não funciona. */
+* {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+}
+
+body {
+    background-color: #f9f9f9;
+}
+
+/* Barra de Navegação */
+nav {
+    position: fixed;
+    width: 100%;
+    padding: 5px 15px;
+    /* z-index: 1; VER DEPOIS */
+    
+    background-color: #f9f9f9;
+    border-bottom: solid 2px #dddddd;
+    /* box-shadow: 0 0 10px 0 #232323; */
+}
+
+/* Menu */
+.menu {
+    padding: 15px 0;
+    text-align: right;
+}
+
+.menu ul {
+    margin: 0;
+}
+
+.menu li {
+    list-style-type: none;
+    display: inline;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #232323;
+    font-weight: 700;
+    font-size: 1.1rem;
+    padding: 15px 25px;
+    transition: 0.5s;
+}
+
+.menu a:hover {
+    background-color: #e2b53a;
+    color: #493b14;
+}
+
+/* CONTINUA... */
