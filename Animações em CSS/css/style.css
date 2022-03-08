@@ -1,0 +1,95 @@
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+}
+
+body {
+    color: #232323;
+    background-color: #232323;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    padding: 25px 45px 350px;
+    background-color: #f7f7f7;
+}
+
+.box {
+    height: 150px;
+    width: 150px;
+    background-color: #999999;
+    position: relative;
+    /* Position relative necessário para mover o elemento */
+    /* Chama a animação */
+    animation-name: animacao4;
+    animation-delay: 1s;
+    /* tempo de atraso */
+    animation-duration: 3s;
+    /* tempo de duração */
+    animation-timing-function: linear;
+    /* forma de execução (suave ou linear) */
+    animation-iteration-count: infinite;
+    /* quantas vezes vai executar */
+    animation-fill-mode: forwards;
+    animation-direction: normal;
+    /* animation-direction: alternate; */
+}
+
+@keyframes animacao1 {
+    from {
+        background-color: red;
+    }
+    to {
+        background-color: #12c92a;
+    }
+}
+
+@keyframes animacao2 {
+    to {
+        background-color: cyan;
+    }
+}
+
+@keyframes animacao3 {
+    0% {
+        background-color: #1468ac;
+    }
+    25% {
+        background-color: #ffd000;
+    }
+    50% {
+        background-color: #dc143c;
+    }
+    75% {
+        background-color: #74ac14;
+    }
+    100% {
+        background-color: #9f12d6;
+    }
+}
+
+@keyframes animacao4 {
+    0% {
+        background-color: #1468ac;
+        left: 0;
+        top: 0;
+    }
+    25% {
+        background-color: #ffd000;
+        left: 500px;
+        top: 0;
+    }
+    50% {
+        background-color: #dc143c;
+    }
+    75% {
+        background-color: #74ac14;
+    }
+    100% {
+        background-color: #9f12d6;
+    }
+}
