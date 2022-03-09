@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulando DOM com JavaScript</title>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Manipulando DOM com JavaScript</h2>
+
+        <h3>DOM (Document Object Model) é utilizado para manipular o conteúdo do documento HTML</h3>
+
+        <h4>Exemplos:</h4>
+
+        <hr>
+        <!-- Exemplo 1 -->
+        <h4>1. Mudando valores com .value</h4>
+
+        <input type="text" id="texto1" value="Texto padrão">
+        <button onclick="mudarTexto()">Mudar texto</button>
+
+        <hr>
+        <!-- Exemplo 2 -->
+        <h4>2. Mudando valores com .innerText</h4>
+
+        <p id="texto2">Texto padrão</p>
+        <button onclick="mudarTexto2()">Mudar texto 2</button>
+
+        <hr>
+        <!-- Exemplo 3 -->
+        <h4>3. Mudando valores com .innerHTML</h4>
+
+        <p id="texto3">Texto padrão</p>
+        <button onclick="mudarTexto3()">Mudar texto 3</button>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
