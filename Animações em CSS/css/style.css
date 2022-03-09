@@ -21,6 +21,7 @@ body {
 .box {
     height: 150px;
     width: 150px;
+    /* border-radius: 50%; */
     background-color: #999999;
     position: relative;
     /* Position relative necessário para mover o elemento */
@@ -30,7 +31,7 @@ body {
     /* tempo de atraso */
     animation-duration: 3s;
     /* tempo de duração */
-    animation-timing-function: linear;
+    animation-timing-function: ease;
     /* forma de execução (suave ou linear) */
     animation-iteration-count: infinite;
     /* quantas vezes vai executar */
@@ -85,11 +86,21 @@ body {
     }
     50% {
         background-color: #dc143c;
+        left: 350px;
+        top: 350px;
+        /* width: 350px; */
     }
     75% {
         background-color: #74ac14;
+        left: 50px;
+        top: 350px;
+        /* opacity: 0.5; */
+        /* transform: scale(1.5); */
+        transform: rotate(3600deg);
     }
     100% {
         background-color: #9f12d6;
+        left: 0;
+        top: 0;
     }
 }
