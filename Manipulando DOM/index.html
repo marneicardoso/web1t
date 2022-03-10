@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manipulando DOM com JavaScript</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -36,7 +37,60 @@
 
         <p id="texto3">Texto padrão</p>
         <button onclick="mudarTexto3()">Mudar texto 3</button>
+
+        <hr>
+        <!-- Exemplo 4 -->
+        <h4>4. Mudando uma imagem ao clicar</h4>
+
+        <img src="img/001.jpg" id="img1" onclick="mudarImagem()">
+
+        <hr>
+        <!-- Exemplo 5 -->
+        <h4>5. Mudando uma imagem ao passar o mouse</h4>
+
+        <img src="img/002.jpg" id="img2" onmouseover="mudarImagem2()" onmouseout="voltarImagem()">
+
+        <hr>
+        <!-- Exemplo 6 -->
+        <h4>6. Mudando o CSS (estilo)</h4>
+
+        <p id="texto6">texto colorido</p>
+        <button onclick="mudarCorTexto()">Mudar cor do texto</button>
+
+        <hr>
+        <!-- Exemplo 7 -->
+        <h4>7. Mudando o CSS (com parâmetros)</h4>
+
+        <p onclick="mudarTexto7(this)">Clique neste texto</p>
+
+        <hr>
+        <!-- Exemplo 8 -->
+        <h4>8. Chamando uma function que chama outra</h4>
+
+        <p>Informe os valores</p>
+
+        <input type="number" id="num1">
+        <input type="number" id="num2">
+
+        <button onclick="calcular(num1, num2)">Calcular</button>
+
+        <h4 id="resultado">Resultado: 0</h4>
+
+        <hr>
+        <!-- Exemplo 9 -->
+        <h4>9. Clicar, segurar e soltar</h4>
+
+        <div class="box"
+            onmousedown="segurar(this)"
+            onmouseup="soltar(this)">
+            Clicar!
+        </div>
     </div>
+
+
+
+
+
 
     <script src="js/script.js"></script>
 </body>
