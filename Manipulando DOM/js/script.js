@@ -103,3 +103,32 @@ function soltar(elemento) {
     elemento.style.color = "#232323";
     elemento.style.backgroundColor = "#ff7f50";
 }
+
+// 10. Data e Hora
+function mostrarData() {
+    document.getElementById('data').innerHTML = Date();
+}
+
+// 11. Contador de Cliques
+
+// Escopo GLOBAL
+let contador = 0;
+
+function contarCliques() {
+    // let contador = 5; // Escopo LOCAL
+    
+    // Incrementa o contador
+    contador++;
+    // contador = contador + 1;
+    // contador += 1;
+
+    // Mostra o resultado
+    document.getElementById('display').value = contador;
+}
+
+function zerarContador() {
+    contador = 0;
+
+    // Mostra o resultado
+    document.getElementById('display').value = contador;
+}
