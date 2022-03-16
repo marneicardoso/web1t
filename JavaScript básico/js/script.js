@@ -39,3 +39,27 @@ function calcularMedia() {
 	// Mostra o resultado na tela
     document.getElementById('resultado2').value = media.toFixed(1);
 }
+
+
+
+
+
+
+
+
+
+// 3. Escreva um algoritmo que calcule o desconto de 10% sobre o preço de um produto. Apresente o novo preço na tela.
+function calcularDesconto() {
+    // 1. ENTRADA
+    // Declaração das variáveis e Atribuição de valores
+    const valorProduto = document.getElementById('valorProduto').value;
+    const percentualDesconto = 10;
+
+    // 2. PROCESSAMENTO
+    // Cálculos e Validações
+    const novoValorProduto = valorProduto - valorProduto / 100 * percentualDesconto;
+
+    // 3. SAÍDA
+	// Mostra o resultado na tela
+    document.getElementById('resultado3').value = novoValorProduto;
+}
