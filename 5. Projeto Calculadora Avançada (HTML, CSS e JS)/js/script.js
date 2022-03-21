@@ -37,11 +37,35 @@ function pegarOperador(sinal) {
 function calcular() {
     let resultado = "";
 
+    // Converte para valores numéricos
+    numero1  = parseFloat(numero1);
+    numero2  = parseFloat(numero2);
+
     // Verifica o Sinal informado
     if (operador == "+") {
         resultado = numero1 + numero2;
+    
+    } else if (operador == "-") {
+        resultado = numero1 - numero2;
+    
+    } else if (operador == "*") {
+        resultado = numero1 * numero2;
+    
+    } else if (operador == "/") {
+        resultado = numero1 / numero2;
+    
+    } else if (operador == "%") {
+        // fazer o cálculo da porcentagem
     }
 
+    resetar();
+    console.log(numero1);
+    console.log(numero2);
+    console.log(operador);
+
+    numero1 = resultado;
+    console.log(numero1);
+    
     atualizarDisplay(resultado);
 }
 
