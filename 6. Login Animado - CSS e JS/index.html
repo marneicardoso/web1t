@@ -8,10 +8,14 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <!-- Forma tradicional -->
+    <!-- <button id="btnAtivar" onclick="animarModal()">Ativar</button> -->
+    
+    <!-- Forma moderna -->
     <button id="btnAtivar">Ativar</button>
 
     <!-- RETIRAR A CLASSE ANIMAR -->
-    <div id="modal" class="animar">
+    <div id="modal">
         <h1>Login</h1>
 
         <label for="email">E-mail</label>
@@ -24,7 +28,7 @@
         <button id="btnLogar">Logar</button>
     </div>
 
-    <div id="load" class="loader"></div>
+    <div id="load"></div>
     <div id="notificacao"></div>
 
     <script src="js/script.js"></script>
